@@ -1,0 +1,25 @@
+{
+  "name": "rotafit-mvp",
+  "version": "1.0.0",
+  "description": "RotaFit+ - MVP com IA Nutricional Personalizada",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "npm run build:backend && npm run build:frontend",
+    "build:backend": "cd backend && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "start": "npm run start:backend",
+    "start:backend": "cd backend && npm run start",
+    "db:migrate": "cd backend && npx prisma migrate dev",
+    "db:seed": "cd backend && npm run seed",
+    "db:reset": "cd backend && npx prisma migrate reset"
+  },
+  "keywords": ["nutrition", "ai", "meal-planning", "weight-loss", "brazilian"],
+  "author": "MiniMax Agent",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

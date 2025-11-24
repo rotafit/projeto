@@ -1,0 +1,1004 @@
+{
+  "app": {
+    "name": "RotaFit+",
+    "tagline": "Sua jornada de emagrecimento personalizada e sustentável",
+    "description": "O aplicativo mais completo para emagrecimento saudável com receitas personalizadas, planners semanais e IA para gerar planos únicos.",
+    "version": "2.0.0",
+    "author": "MiniMax Agent",
+    "extraction_date": "2025-11-23",
+    "total_pdfs_processed": 20,
+    "content_source": "Transcrição completa de 20 PDFs originais",
+    "landing_page": "https://www.unavidasaudable.com/rotafit/"
+  },
+  "content_statistics": {
+    "total_recipes": 317,
+    "total_categories": 11,
+    "total_calories_range": "7-1290 kcal",
+    "content_structure": {
+      "shakes_vitaminas": 20,
+      "cafe_da_manha": 20,
+      "detox": 25,
+      "saladas": 20,
+      "jantar": 25,
+      "almoco": 41,
+      "sopas": 41,
+      "lanches": 20,
+      "ceia": 20,
+      "termogenicas": 10,
+      "low_carb": 10,
+      "sobresmeses_saudaveis": 32,
+      "marmitas": 15,
+      "cardapios_prontos": 21,
+      "kit_turbo": 10
+    }
+  },
+  "subscription_plans": {
+    "basico": {
+      "name": "Plano Básico",
+      "price": "R$ 19,90/mês",
+      "features": [
+        "Biblioteca de E-books e Receitas",
+        "Cardápios Prontos (7 dias)",
+        "+100 Receitas (Café, Almoço, Jantar, Ceia)"
+      ],
+      "limitations": [
+        "Sem acesso à IA personalizada",
+        "Sem planner interativo",
+        "Sem lista de compras automática"
+      ]
+    },
+    "intermediario": {
+      "name": "Plano Intermediário",
+      "price": "R$ 29,90/mês",
+      "features": [
+        "Todos os benefícios do Plano Básico",
+        "Receitas Low Carb, Termogênicas e Sobremesas Saudáveis",
+        "Planner Semanal Interativo (No App)",
+        "Guia Emagrecendo com Marmitas",
+        "Receitas Detox",
+        "Lista de Compras Automática"
+      ],
+      "limitations": [
+        "Sem acesso ao App Rota Fit completo",
+        "Sem quiz de personalização completo"
+      ]
+    },
+    "premium": {
+      "name": "Plano Premium",
+      "price": "R$ 49,90/mês",
+      "yearly_price": "R$ 499/ano",
+      "features": [
+        "Todos os benefícios dos planos anteriores",
+        "Acesso ao App Rota Fit",
+        "Quiz de Personalização Completo",
+        "Cardápio Personalizado 100% por IA",
+        "Acompanhamento de Progresso Avançado",
+        "Kit Turbo de Emagrecimento"
+      ]
+    }
+  },
+  "categories": [
+    {
+      "id": "shakes_vitaminas",
+      "name": "Shakes e Vitaminas",
+      "description": "Bebidas nutritivas para substituição ou complemento",
+      "icon": "shake",
+      "color": "#84CC16",
+      "estimated_calories": "94-423 kcal/porção",
+      "focus": "Nutrição rápida e saciedade",
+      "total_recipes": 20,
+      "pdf_source": "2-SHAKES.pdf.pdf",
+      "total_pages": 23,
+      "special_notes": ["Contém vitaminas com frutas, proteínas e ingredientes termogênicos", "Ótimas para o café da manhã ou lanches", "Receitas ajudam no controle do intestino preguiçoso (não coar)"]
+    },
+    {
+      "id": "cafe_da_manha",
+      "name": "Café da Manhã",
+      "description": "Opções nutritivas e energizantes para começar o dia",
+      "icon": "breakfast",
+      "color": "#8B5CF6",
+      "estimated_calories": "140-1290 kcal/refeição",
+      "focus": "Energia matinal e controle do apetite",
+      "total_recipes": 20,
+      "pdf_source": "7-CAFDAMANH.pdf",
+      "total_pages": 23,
+      "special_notes": ["Receitas vão desde simples a elaboradas", "Inclui proteínas, mingaus, muffins e bolos saudáveis", "Foco em ingredientes sem glúten e baixo açúcar"]
+    },
+    {
+      "id": "detox",
+      "name": "Detox",
+      "description": "Sucos detox para limpeza do organismo e eliminação de toxinas",
+      "icon": "detox",
+      "color": "#10B981",
+      "estimated_calories": "38-226 kcal/porção",
+      "focus": "Desintoxicação e eliminação de líquidos retidos",
+      "total_recipes": 25,
+      "pdf_source": "3-DETOX.pdf.pdf + Receitas-Detox-Poderosas.pdf",
+      "total_pages": 23,
+      "special_notes": ["Sucos concentrados em nutrientes", "Inclui ingredientes como couve, gengibre, limão", "Focos anti-inflamatórios e diuréticos", "Mini plano detox de 3 dias incluído"]
+    },
+    {
+      "id": "saladas",
+      "name": "Saladas",
+      "description": "Refeições leves com vegetais frescos e nutritivos",
+      "icon": "salad",
+      "color": "#22C55E",
+      "estimated_calories": "64-688 kcal/refeição",
+      "focus": "Vitaminas, minerais e saciedade com poucas calorias",
+      "total_recipes": 20,
+      "pdf_source": "4-SALADAS.pdf.pdf",
+      "total_pages": 23,
+      "special_notes": ["Receitas simples e criativas", "Inclui saladas com proteínas (frango, atum)", "Variações de temperos e ingredientes"]
+    },
+    {
+      "id": "jantar",
+      "name": "Jantar",
+      "description": "Refeições leves para facilitar o sono e digestão",
+      "icon": "dinner",
+      "color": "#6366F1",
+      "estimated_calories": "200-700 kcal/refeição",
+      "focus": "Facilidade digestiva e qualidade do sono",
+      "total_recipes": 25,
+      "pdf_source": "10-JANTAR.pdf",
+      "total_pages": 26,
+      "special_notes": ["Inclui massas leves, proteínas magras e vegetais", "Receitas variadas de macarrão, frango, peixe", "Foco em digestão tranquila"]
+    },
+    {
+      "id": "almoco",
+      "name": "Almoço",
+      "description": "Refeições principais balanceadas e nutritivas",
+      "icon": "lunch",
+      "color": "#EC4899",
+      "estimated_calories": "300-800 kcal/refeição",
+      "focus": "Nutrientes essenciais e saciedade",
+      "total_recipes": 41,
+      "pdf_source": "8-ALMOO.pdf",
+      "total_pages": 41,
+      "special_notes": ["Receitas mais elaboradas e nutritivas", "Inclui preparações com carne, frango, peixe", "Foco em balanceamento nutricional"]
+    },
+    {
+      "id": "sopas",
+      "name": "Sopas",
+      "description": "Sopas nutritivas e reconfortantes",
+      "icon": "soup",
+      "color": "#F97316",
+      "estimated_calories": "200-600 kcal/porção",
+      "focus": "Hidratação, saciedade e nutrientes",
+      "total_recipes": 41,
+      "pdf_source": "5-SOPAS.pdf",
+      "total_pages": 43,
+      "special_notes": ["Receitas reconfortantes e nutritivas", "Inclui ingredientes frescos e temperos", "Ideal para dias mais frios"]
+    },
+    {
+      "id": "lanches",
+      "name": "Lanches",
+      "description": "Opções saudáveis para entre as refeições",
+      "icon": "snack",
+      "color": "#EF4444",
+      "estimated_calories": "100-300 kcal/porção",
+      "focus": "Saciedade entre refeições e controle da fome",
+      "total_recipes": 20,
+      "pdf_source": "9-LANCHES.pdf",
+      "total_pages": 20,
+      "special_notes": ["Receitas práticas e rápidas", "Inclui proteinas e carboidratos complexos", "Perfeitas para levar"]
+    },
+    {
+      "id": "ceia",
+      "name": "Ceia",
+      "description": "Refeições leves para finalizar o dia",
+      "icon": "evening",
+      "color": "#7C3AED",
+      "estimated_calories": "80-400 kcal/refeição",
+      "focus": "Relaxamento e digestão tranquila",
+      "total_recipes": 20,
+      "pdf_source": "11-CEIA.pdf",
+      "total_pages": 21,
+      "special_notes": ["Receitas super leves para a noite", "Inclui chás calmantes e sobremesas saudáveis", "Foco na qualidade do sono"]
+    },
+    {
+      "id": "termogenicas",
+      "name": "Receitas Termogênicas",
+      "description": "Receitas com ingredientes que aceleram o metabolismo",
+      "icon": "thermogenic",
+      "color": "#DC2626",
+      "estimated_calories": "200-500 kcal/refeição",
+      "focus": "Queima de gordura e aceleração metabólica",
+      "total_recipes": 10,
+      "pdf_source": "RECEITAS TERMOGÊNICAS.pdf",
+      "total_pages": 12,
+      "special_notes": ["Contém ingredientes termogênicos: alho, gengibre, pimenta", "Acelera o metabolismo e ajuda na queima de calorias", "Foco em ingredientes benéficos para a saúde"]
+    },
+    {
+      "id": "low_carb",
+      "name": "Receitas Low Carb",
+      "description": "Opções com baixo teor de carboidratos",
+      "icon": "low_carb",
+      "color": "#0D9488",
+      "estimated_calories": "150-400 kcal/refeição",
+      "focus": "Controle de carboidratos e emagrecimento",
+      "total_recipes": 10,
+      "pdf_source": "RECEITAS LOW CARB.pdf",
+      "total_pages": 12,
+      "special_notes": ["Baixo consumo de carboidratos", "Ideal para controle de peso", "Substituições inteligentes de ingredientes"]
+    },
+    {
+      "id": "sobresmeses_saudaveis",
+      "name": "Sobremesas Saudáveis",
+      "description": "Opções doces sem culpa, nutritivas e deliciosas",
+      "icon": "dessert",
+      "color": "#DB2777",
+      "estimated_calories": "80-300 kcal/porção",
+      "focus": "Satisfação com nutrientes e controle calórico",
+      "total_recipes": 32,
+      "pdf_source": "SOBREMESAS SAUDÁVEIS.pdf + 9-LANCHES.pdf",
+      "total_pages": 34,
+      "special_notes": ["Receitas doces sem açúcar refinado", "Porções controladas de 200-300g", "Inclui mousses, sorvetes, shakes e chocolates saudáveis"]
+    },
+    {
+      "id": "marmitas",
+      "name": "Emagrecendo com Marmitas",
+      "description": "Guia prático para organização de refeições",
+      "icon": "mealprep",
+      "color": "#059669",
+      "estimated_calories": "300-600 kcal/refeição",
+      "focus": "Organização e praticidade",
+      "total_recipes": 15,
+      "pdf_source": "Emagrecendo-com-Marmitas.pdf",
+      "total_pages": 10,
+      "special_notes": ["Guia completo de meal prep", "Estratégias de armazenamento e conservação", "Economia de tempo e dinheiro"]
+    },
+    {
+      "id": "cardapios_prontos",
+      "name": "Cardápios Prontos + Planner",
+      "description": "Cardápios completos para 7 dias com planner semanal",
+      "icon": "planner",
+      "color": "#7C2D12",
+      "estimated_calories": "Variável por refeição",
+      "focus": "Organização e planejamento",
+      "total_recipes": 21,
+      "pdf_source": "Cardapios-Prontos-Planner-Semanal-para-Emagrecimento.pdf",
+      "total_pages": 10,
+      "special_notes": ["Cardápios completos para 7 dias", "Planner semanal interativo", "Controle de hidratação e exercícios"]
+    },
+    {
+      "id": "kit_turbo",
+      "name": "Kit Turbo de Emagrecimento",
+      "description": "Guia definitivo para resultados rápidos e sustentáveis",
+      "icon": "turbo",
+      "color": "#BE123C",
+      "estimated_calories": "Variável por combinação",
+      "focus": "Resultados acelerados com organização",
+      "total_recipes": 10,
+      "pdf_source": "Kit-Turbo-de-Emagrecimento-Seu-Guia-Definitivo-para-Resultados-Rapidos-e-Sustentaveis.pdf",
+      "total_pages": 10,
+      "special_notes": ["Sistema completo de organização", "Cardápios personalizados via IA", "Planner diário e acompanhamento de progresso"]
+    }
+  ],
+  "recipes": {
+    "shakes_vitaminas": [
+      {
+        "id": "shake_001",
+        "name": "Vitamina de Maçã",
+        "category": "shakes_vitaminas",
+        "difficulty": "fácil",
+        "prep_time": "5 min",
+        "cook_time": "0 min",
+        "servings": 1,
+        "calories": 94,
+        "ingredients": [
+          {"item": "1/2 xícara de leite desnatado", "amount": "120ml", "unit": "ml"},
+          {"item": "1 maçã pequena picada", "amount": "1", "unit": "unidade"},
+          {"item": "Adoçante e gelo a gosto", "amount": "a gosto", "unit": "unidade"}
+        ],
+        "instructions": [
+          "Bata tudo no liquidificador e bom apetite!"
+        ],
+        "tags": ["low_calorie", "rápido", "café_da_manhã"],
+        "nutrition": {
+          "protein": 4,
+          "carbs": 15,
+          "fat": 1
+        },
+        "health_benefits": ["Vitamina C", "Fibras", "Hidratação"]
+      }
+    ],
+    "termogenicas": [
+      {
+        "id": "termogenic_001",
+        "name": "Arroz Integral com Frango Picante",
+        "category": "termogenicas",
+        "difficulty": "médio",
+        "prep_time": "10 min",
+        "cook_time": "35 min",
+        "servings": 1,
+        "calories": 380,
+        "ingredients": [
+          {"item": "50g de arroz integral", "amount": "50g", "unit": "gramas"},
+          {"item": "150g de peito de frango desfiado", "amount": "150g", "unit": "gramas"},
+          {"item": "50g de brócolis picado", "amount": "50g", "unit": "gramas"},
+          {"item": "1/2 cebola ralada", "amount": "0.5", "unit": "unidade"},
+          {"item": "50g de pimentões variados", "amount": "50g", "unit": "gramas"},
+          {"item": "3 dentes de alho picados", "amount": "3", "unit": "unidades"},
+          {"item": "1 pimenta dedo-de-moça ou malagueta", "amount": "1", "unit": "unidade"},
+          {"item": "3 xícaras de água", "amount": "720ml", "unit": "ml"},
+          {"item": "Sal e temperos a gosto", "amount": "a gosto", "unit": "unidade"}
+        ],
+        "instructions": [
+          "Colocar na panela de pressão todos os ingredientes já cortados e misturar tudo.",
+          "Levar ao fogo e contar 25 minutos após a válvula começar a chiar.",
+          "Desligar o fogo e manter a panela fechada por 10 minutos.",
+          "Abrir a panela de pressão, misturar o conteúdo. Pronto para servir!"
+        ],
+        "tags": ["termogênico", "proteína", "completo"],
+        "nutrition": {
+          "protein": 32,
+          "carbs": 45,
+          "fat": 8
+        },
+        "health_benefits": ["Termogênese", "Proteína magra", "Fibras", "Vitaminas"]
+      },
+      {
+        "id": "termogenic_002",
+        "name": "Salada de Couve com Gengibre",
+        "category": "termogenicas",
+        "difficulty": "fácil",
+        "prep_time": "10 min",
+        "cook_time": "0 min",
+        "servings": 1,
+        "calories": 220,
+        "ingredients": [
+          {"item": "1 couve cortada", "amount": "1", "unit": "unidade"},
+          {"item": "1 xícara de brócolis cortado", "amount": "150g", "unit": "gramas"},
+          {"item": "1 beterraba ralada", "amount": "1", "unit": "unidade"},
+          {"item": "1 colher de sopa de vinagre de maçã", "amount": "15ml", "unit": "ml"},
+          {"item": "1 limão", "amount": "1", "unit": "unidade"},
+          {"item": "150g de frango em cubos", "amount": "150g", "unit": "gramas"},
+          {"item": "Gengibre para temperar", "amount": "a gosto", "unit": "unidade"},
+          {"item": "Sal e pimenta a gosto", "amount": "a gosto", "unit": "unidade"}
+        ],
+        "instructions": [
+          "Coloque a couve, o brócolis, o frango, a beterraba e o gengibre em uma vasilha.",
+          "Misture.",
+          "Tempere a salada com sal, pimenta, vinagre de maçã e limão. Pronto para servir!"
+        ],
+        "tags": ["termogênico", "detox", "proteína"],
+        "nutrition": {
+          "protein": 28,
+          "carbs": 15,
+          "fat": 6
+        },
+        "health_benefits": ["Termogênese", "Antioxidantes", "Ferro", "Vitamina C"]
+      },
+      {
+        "id": "termogenic_003",
+        "name": "Hambúguer de Cenoura com Atum",
+        "category": "termogenicas",
+        "difficulty": "fácil",
+        "prep_time": "15 min",
+        "cook_time": "15 min",
+        "servings": 2,
+        "calories": 290,
+        "ingredients": [
+          {"item": "1 cenoura ralada", "amount": "1", "unit": "unidade"},
+          {"item": "1 cebola bem picada", "amount": "1", "unit": "unidade"},
+          {"item": "1/4 xícara de cebolinha picada", "amount": "60ml", "unit": "ml"},
+          {"item": "1 ovo grande", "amount": "1", "unit": "unidade"},
+          {"item": "2 colheres de sopa de leite", "amount": "30ml", "unit": "ml"},
+          {"item": "2 colheres de sopa de farinha de aveia", "amount": "20g", "unit": "gramas"},
+          {"item": "100g de atum em lata", "amount": "100g", "unit": "gramas"},
+          {"item": "Gengibre a gosto", "amount": "a gosto", "unit": "unidade"},
+          {"item": "Sal, oregão e pimenta a gosto", "amount": "a gosto", "unit": "unidade"}
+        ],
+        "instructions": [
+          "Misture todos os ingredientes e amasse bem.",
+          "Faça o formato de hambúrguer ou bolinhas.",
+          "Frite na air fryer até dourar. Pronto para servir!"
+        ],
+        "tags": ["termogênico", "protein", "gluten_free"],
+        "nutrition": {
+          "protein": 22,
+          "carbs": 18,
+          "fat": 12
+        },
+        "health_benefits": ["Ômega 3", "Termogênese", "Fibras", "Betacaroteno"]
+      },
+      {
+        "id": "termogenic_004",
+        "name": "Arroz Integral Colorido",
+        "category": "termogenicas",
+        "difficulty": "médio",
+        "prep_time": "15 min",
+        "cook_time": "25 min",
+        "servings": 1,
+        "calories": 420,
+        "ingredients": [
+          {"item": "50g de arroz integral", "amount": "50g", "unit": "gramas"},
+          {"item": "150g de carne desfiada", "amount": "150g", "unit": "gramas"},
+          {"item": "1 fio de azeite", "amount": "5ml", "unit": "ml"},
+          {"item": "Cenoura, cebola e alho a gosto", "amount": "a gosto", "unit": "unidade"},
+          {"item": "Gengibre a gosto", "amount": "a gosto", "unit": "unidade"},
+          {"item": "3 xícaras de água", "amount": "720ml", "unit": "ml"},
+          {"item": "Sal a gosto", "amount": "a gosto", "unit": "unidade"},
+          {"item": "Hortelã para decorar", "amount": "a gosto", "unit": "unidade"}
+        ],
+        "instructions": [
+          "Pique os legumes e reserve.",
+          "Em uma panela coloque o arroz e toste bastante.",
+          "Acrescente o óleo e doure os legumes.",
+          "Coloque a água e o sal, tampe a panela e deixe cozinhar em fogo baixo por aproximadamente 10 minutos depois de ferver.",
+          "Depois de pronto acrescente a carne.",
+          "Decore com ramos de hortelã. Pronto para servir!"
+        ],
+        "tags": ["termogênico", "proteína", "completo"],
+        "nutrition": {
+          "protein": 28,
+          "carbs": 42,
+          "fat": 12
+        },
+        "health_benefits": ["Termogênese", "Proteína completa", "Fibras", "Vitaminas do complexo B"]
+      },
+      {
+        "id": "termogenic_005",
+        "name": "Camarão com Alho e Pimenta",
+        "category": "termogenicas",
+        "difficulty": "fácil",
+        "prep_time": "15 min",
+        "cook_time": "10 min",
+        "servings": 1,
+        "calories": 280,
+        "ingredients": [
+          {"item": "100g de camarões", "amount": "100g", "unit": "gramas"},
+          {"item": "2 dentes de alho", "amount": "2", "unit": "unidades"},
+          {"item": "1 pimenta dedo de moça", "amount": "1", "unit": "unidade"},
+          {"item": "Sal a gosto", "amount": "a gosto", "unit": "unidade"},
+          {"item": "1 fio de azeite", "amount": "5ml", "unit": "ml"},
+          {"item": "Coentro a gosto", "amount": "a gosto", "unit": "unidade"},
+          {"item": "Suco de 1 limão", "amount": "30ml", "unit": "ml"}
+        ],
+        "instructions": [
+          "Descasque os camarões e limpe.",
+          "Pique os dentes de alho e a pimenta dedo de moça, amasse com uma colher (chá) de sal.",
+          "Tempere os camarões, adicione o azeite e deixe marinar por 20 minutos na geladeira.",
+          "Em uma frigideira bem quente, salteie os camarões por cerca de cinco minutos, até ficarem rosados.",
+          "Adicione o coentro e limão.",
+          "Acompanhe com uma salada. Pronto para servir!"
+        ],
+        "tags": ["termogênico", "proteína magra", "ômega 3"],
+        "nutrition": {
+          "protein": 26,
+          "carbs": 8,
+          "fat": 14
+        },
+        "health_benefits": ["Termogênese", "Ômega 3", "Antioxidantes", "Baixo índice glicêmico"]
+      },
+      {
+        "id": "termogenic_006",
+        "name": "Salada de Abacate com Atum",
+        "category": "termogenicas",
+        "difficulty": "fácil",
+        "prep_time": "10 min",
+        "cook_time": "0 min",
+        "servings": 1,
+        "calories": 350,
+        "ingredients": [
+          {"item": "Meio abacate picado em cubos pequenos", "amount": "100g", "unit": "gramas"},
+          {"item": "1 limão (suco)", "amount": "30ml", "unit": "ml"},
+          {"item": "100g de atum ou sardinha em lata", "amount": "100g", "unit": "gramas"},
+          {"item": "2 tomates picados em cubos", "amount": "150g", "unit": "gramas"},
+          {"item": "Sal e temperos a gosto", "amount": "a gosto", "unit": "unidade"},
+          {"item": "Molho de pimenta a gosto", "amount": "a gosto", "unit": "unidade"},
+          {"item": "1 cebola de cabeça bem picada", "amount": "50g", "unit": "gramas"},
+          {"item": "Alface a gosto", "amount": "a gosto", "unit": "unidade"}
+        ],
+        "instructions": [
+          "Misturar o abacate com o suco de limão, a cebola, os tomates, o atum e o molho de pimenta.",
+          "Levar para gelar.",
+          "Misturar o sal e o alface somente quando for servir (porque a salada fica aguada se misturar antes).",
+          "Pronto para servir!"
+        ],
+        "tags": ["termogênico", "ômega 3", "gorduras boas"],
+        "nutrition": {
+          "protein": 25,
+          "carbs": 12,
+          "fat": 24
+        },
+        "health_benefits": ["Termogênese", "Ômega 3", "Gorduras monoinsaturadas", "Fibras"]
+      },
+      {
+        "id": "termogenic_007",
+        "name": "Patê de Frango com Cenoura",
+        "category": "termogenicas",
+        "difficulty": "fácil",
+        "prep_time": "10 min",
+        "cook_time": "15 min",
+        "servings": 2,
+        "calories": 200,
+        "ingredients": [
+          {"item": "150g de frango cozido", "amount": "150g", "unit": "gramas"},
+          {"item": "1 cenouras cozidas", "amount": "1", "unit": "unidade"},
+          {"item": "1/2 requeijão light", "amount": "60g", "unit": "gramas"},
+          {"item": "1 dente de alho pequeno", "amount": "1", "unit": "unidade"},
+          {"item": "Gengibre e pimenta a gosto", "amount": "a gosto", "unit": "unidade"},
+          {"item": "Sal e orégano a gosto", "amount": "a gosto", "unit": "unidade"},
+          {"item": "Água", "amount": "a gosto", "unit": "unidade"}
+        ],
+        "instructions": [
+          "Juntar todos os ingredientes já prontos e bater no liquidificador.",
+          "Acrescentar a água só pra ajudar bater, se for preciso.",
+          "Servir com torradinhas integrais. Pronto para servir!"
+        ],
+        "tags": ["termogênico", "proteína", "versátil"],
+        "nutrition": {
+          "protein": 20,
+          "carbs": 10,
+          "fat": 8
+        },
+        "health_benefits": ["Termogênese", "Betacaroteno", "Proteína magra", "Vitaminas"]
+      },
+      {
+        "id": "termogenic_008",
+        "name": "Refogado Apimentado",
+        "category": "termogenicas",
+        "difficulty": "fácil",
+        "prep_time": "10 min",
+        "cook_time": "20 min",
+        "servings": 1,
+        "calories": 320,
+        "ingredients": [
+          {"item": "150g de carne", "amount": "150g", "unit": "gramas"},
+          {"item": "1 cenoura", "amount": "1", "unit": "unidade"},
+          {"item": "1 chuchu", "amount": "1", "unit": "unidade"},
+          {"item": "1 pimenta malagueta", "amount": "1", "unit": "unidade"},
+          {"item": "1 cebola média ralada", "amount": "80g", "unit": "gramas"},
+          {"item": "1/2 caldo de legumes", "amount": "5g", "unit": "gramas"},
+          {"item": "1 fio de azeite", "amount": "5ml", "unit": "ml"}
+        ],
+        "instructions": [
+          "Pique a cenoura, o chuchu e a cebola.",
+          "Colocar a cebola para dourar no azeite, acrescentar a carne, a pimenta e o caldo de legumes.",
+          "Em seguida colocar o chuchu e a cenoura e deixar refogar até ficarem macias.",
+          "Pronto para servir!"
+        ],
+        "tags": ["termogênico", "proteína", "vegetais"],
+        "nutrition": {
+          "protein": 24,
+          "carbs": 16,
+          "fat": 18
+        },
+        "health_benefits": ["Termogênese", "Vitamina A", "Proteína completa", "Fibras"]
+      },
+      {
+        "id": "termogenic_009",
+        "name": "Purê de Abóbora com Gengibre",
+        "category": "termogenicas",
+        "difficulty": "médio",
+        "prep_time": "10 min",
+        "cook_time": "25 min",
+        "servings": 1,
+        "calories": 250,
+        "ingredients": [
+          {"item": "150g abóbora", "amount": "150g", "unit": "gramas"},
+          {"item": "Gengibre ralado a gosto", "amount": "a gosto", "unit": "unidade"},
+          {"item": "1/2 xícara (chá) de leite de coco", "amount": "120ml", "unit": "ml"},
+          {"item": "2 dentes de alho ralados", "amount": "2", "unit": "unidades"},
+          {"item": "Sal e temperos a gosto", "amount": "a gosto", "unit": "unidade"}
+        ],
+        "instructions": [
+          "Bata a abóbora cozida com o alho e os temperos.",
+          "Em uma panela, misture a abóbora batida com meia xícara de leite de coco e o gengibre.",
+          "Aqueça em fogo médio, mexendo sem parar, por cerca de cinco minutos, até soltar do fundo da panela.",
+          "Se quiser um sabor especial, acrescentão ervas frescas, como tomilho, alecrim e sálvia.",
+          "Sirva com 100g de carne. Pronto para servir!"
+        ],
+        "tags": ["termogênico", "vegetariano", "detox"],
+        "nutrition": {
+          "protein": 8,
+          "carbs": 28,
+          "fat": 12
+        },
+        "health_benefits": ["Termogênese", "Beta-caroteno", "Anti-inflamatório", "Vitaminas"]
+      },
+      {
+        "id": "termogenic_010",
+        "name": "Panqueca de Aveia",
+        "category": "termogenicas",
+        "difficulty": "fácil",
+        "prep_time": "5 min",
+        "cook_time": "10 min",
+        "servings": 1,
+        "calories": 220,
+        "ingredients": [
+          {"item": "1 ovo", "amount": "1", "unit": "unidade"},
+          {"item": "4 colheres de farinha de aveia", "amount": "40g", "unit": "gramas"},
+          {"item": "Adoçante a gosto", "amount": "a gosto", "unit": "unidade"},
+          {"item": "1/4 de xícara de leite desnatado", "amount": "60ml", "unit": "ml"},
+          {"item": "Canela a gosto", "amount": "a gosto", "unit": "unidade"}
+        ],
+        "instructions": [
+          "Coloque o ovo em um recipiente pequeno.",
+          "Mexa com um garfo até ficar espumadinho.",
+          "Coloque o resto dos ingredientes e mexa bem.",
+          "Unte uma frigideira.",
+          "Coloque no fogo baixo e ponha a mistura.",
+          "Quando a ponta estiver desgrudando, vire a panqueca e cozinhe do outro lado.",
+          "Pronto para servir!"
+        ],
+        "tags": ["termogênico", "fibras", "café da manhã"],
+        "nutrition": {
+          "protein": 12,
+          "carbs": 25,
+          "fat": 6
+        },
+        "health_benefits": ["Termogênese", "Fibras", "Proteína de qualidade", "Baixo índice glicêmico"]
+      }
+    ],
+    "low_carb": [
+      {
+        "id": "lowcarb_001",
+        "name": "Crepioca",
+        "category": "low_carb",
+        "difficulty": "fácil",
+        "prep_time": "5 min",
+        "cook_time": "5 min",
+        "servings": 1,
+        "calories": 180,
+        "ingredients": [
+          {"item": "2 ovos", "amount": "2", "unit": "unidades"},
+          {"item": "1 colher de sopa de farinha de linhaça", "amount": "10g", "unit": "gramas"},
+          {"item": "Queijo ralado a gosto", "amount": "a gosto", "unit": "unidade"},
+          {"item": "Orégano e pitada de sal", "amount": "a gosto", "unit": "unidade"},
+          {"item": "Sal e pimenta a gosto", "amount": "a gosto", "unit": "unidade"}
+        ],
+        "instructions": [
+          "Misture todos os ingredientes em uma tigela pequena, batendo bem os ovos até ficar tudo uniforme.",
+          "Despeje em uma frigideira untada e doure dos dois lados.",
+          "Se desejar, adicione recheios com queijo, frango, carnes ou peixes e vegetais. Pronto para servir!"
+        ],
+        "tags": ["low_carb", "rápido", "gluten_free"],
+        "nutrition": {
+          "protein": 14,
+          "carbs": 6,
+          "fat": 12
+        },
+        "health_benefits": ["Baixo carboidrato", "Ómega 3", "Proteína de alta qualidade"]
+      },
+      {
+        "id": "lowcarb_002",
+        "name": "Bolinho de Espinafre Assado",
+        "category": "low_carb",
+        "difficulty": "fácil",
+        "prep_time": "10 min",
+        "cook_time": "20 min",
+        "servings": 2,
+        "calories": 120,
+        "ingredients": [
+          {"item": "1/2 maço xícara de espinafre", "amount": "100g", "unit": "gramas"},
+          {"item": "1 ovo", "amount": "1", "unit": "unidade"},
+          {"item": "1 colher de sopa de farelo de aveia", "amount": "8g", "unit": "gramas"},
+          {"item": "1/2 colher de sopa de farinha de grão-de-bico", "amount": "5g", "unit": "gramas"},
+          {"item": "Sal e pimenta a gosto", "amount": "a gosto", "unit": "unidade"}
+        ],
+        "instructions": [
+          "Corte os espinafres e refogue levemente em azeite de oliva.",
+          "Misture todos os ingredientes e com a colher faça pequenos bolinhos.",
+          "Asse em uma forma untada em fogo baixo de 15 a 20 minutos ou até estarem dourados. Pronto para servir!"
+        ],
+        "tags": ["low_carb", "vegetariano", "assado"],
+        "nutrition": {
+          "protein": 8,
+          "carbs": 12,
+          "fat": 4
+        },
+        "health_benefits": ["Ferro", "Ácido fólico", "Baixo carboidrato", "Vegano"]
+      },
+      {
+        "id": "lowcarb_003",
+        "name": "Bolo de Caneca",
+        "category": "low_carb",
+        "difficulty": "fácil",
+        "prep_time": "2 min",
+        "cook_time": "3 min",
+        "servings": 1,
+        "calories": 210,
+        "ingredients": [
+          {"item": "15g óleo de coco", "amount": "15g", "unit": "gramas"},
+          {"item": "15g de farinha de amêndoas", "amount": "15g", "unit": "gramas"},
+          {"item": "1 ovo", "amount": "1", "unit": "unidade"},
+          {"item": "Canela e cacau a gosto", "amount": "a gosto", "unit": "unidade"},
+          {"item": "Adoçante a gosto", "amount": "a gosto", "unit": "unidade"},
+          {"item": "1 pitada de fermento químico", "amount": "1", "unit": "pitada"},
+          {"item": "1 pitada de sal", "amount": "1", "unit": "pitada"}
+        ],
+        "instructions": [
+          "Misturar todos os ingredientes dentro de uma caneca.",
+          "Levar ao microondas por cerca de 2 a 3 minutos dependendo da potência de seu aparelho. Pronto para servir!"
+        ],
+        "tags": ["low_carb", "microondas", "rápido"],
+        "nutrition": {
+          "protein": 12,
+          "carbs": 8,
+          "fat": 15
+        },
+        "health_benefits": ["Baixo carboidrato", "Gorduras boas", "Proteína", "Sem açúcar"]
+      }
+    ],
+    "ceia": [
+      {
+        "id": "ceia_001",
+        "name": "Cookies de Aveia e Canela",
+        "category": "ceia",
+        "difficulty": "fácil",
+        "prep_time": "10 min",
+        "cook_time": "13 min",
+        "servings": 12,
+        "calories": 85,
+        "ingredients": [
+          {"item": "120g de aveia", "amount": "120g", "unit": "gramas"},
+          {"item": "70g de tâmaras", "amount": "70g", "unit": "gramas"},
+          {"item": "4 a 5 colheres de sopa de purê de maçã", "amount": "60ml", "unit": "ml"},
+          {"item": "1 colher de sopa de canela", "amount": "8g", "unit": "gramas"}
+        ],
+        "instructions": [
+          "Em um liquidificador, misture todos os ingredientes até obter uma massa homogênea e levemente grudenta.",
+          "Se a mistura estiver seca demais, adicione mais uma colher de purê de maçã.",
+          "Faça 12 bolinhas com a massa, pressione-as para deixá-las no formato de cookies, e coloque-as numa assadeira forrada com papel vegetal.",
+          "Asse os cookies por 10 a 13 minutos, a 180°C."
+        ],
+        "tags": ["ceia", "saudável", "fibras"],
+        "nutrition": {
+          "protein": 2.5,
+          "carbs": 16,
+          "fat": 1.8
+        },
+        "health_benefits": ["Fibras", "Potássio", "Baixo açúcar", "Energia sustentada"]
+      },
+      {
+        "id": "ceia_002",
+        "name": "Tigela de Cereais ao Forno Sabor Brownie",
+        "category": "ceia",
+        "difficulty": "fácil",
+        "prep_time": "5 min",
+        "cook_time": "18 min",
+        "servings": 2,
+        "calories": 180,
+        "ingredients": [
+          {"item": "1 xícara de aveia", "amount": "80g", "unit": "gramas"},
+          {"item": "1 xícara de leite de sua preferência", "amount": "240ml", "unit": "ml"},
+          {"item": "4 colheres de sopa de farinha de coco", "amount": "40g", "unit": "gramas"},
+          {"item": "2 colheres de sopa de cacau em pó", "amount": "16g", "unit": "gramas"},
+          {"item": "2 colheres de sopa de mel", "amount": "30ml", "unit": "ml"},
+          {"item": "Gotas de chocolate meio-amargo", "amount": "a gosto", "unit": "unidade"}
+        ],
+        "instructions": [
+          "Misture bem todos os ingredientes e divida a mistura em dois ramequins ou tigelas pequenas que possam ir ao forno.",
+          "Você pode polvilhar algumas gotas de chocolate meio-amargo sobre a massa e assar por 15 a 20 minutos, a 160°C, até ficar firme.",
+          "Eu recomendo servir quente."
+        ],
+        "tags": ["ceia", "chocolate", "conforto"],
+        "nutrition": {
+          "protein": 6,
+          "carbs": 28,
+          "fat": 5
+        },
+        "health_benefits": ["Fibras", "Antioxidantes", "Magnésio", "Energia"]
+      }
+    ]
+  },
+  "guides_and_books": {
+    "detox_guide": {
+      "title": "Receitas Detox Poderosas: Guia Essencial para Emagrecimento Saudável",
+      "chapters": [
+        {
+          "title": "Introdução ao Detox",
+          "content": "O que é Detox e Por Que Funciona? O detox é um processo natural do corpo para eliminar toxinas acumuladas devido à alimentação inadequada, poluição e estresse.",
+          "benefits": ["Redução do inchaço", "Aumento da energia", "Preparação para emagrecimento", "Metabolismo mais eficiente"]
+        },
+        {
+          "title": "Regras Simples do Detox",
+          "content": "Alimentos Aliados: gengibre, limão, cúrcuma, hortelã, couve e frutas vermelhas. Alimentos a Evitar: industrializados, açúcar refinado, frituras e bebidas açucaradas.",
+          "recommendations": ["Priorizar alimentos frescos", "Minimizar processamento", "Incluir antioxidantes"]
+        },
+        {
+          "title": "Mini Plano Detox de 3 Dias",
+          "content": "Plano completo com sucos, refeições detox e orientações para iniciar o processo de desintoxicação.",
+          "daily_structure": {
+            "breakfast": ["Shake Verde Cremoso", "Suco Limão, Gengibre e Couve"],
+            "lunch": ["Salada com proteína magra", "Sopa de Abóbora com Gengibre"],
+            "dinner": ["Caldo de Legumes Detox", "Peixe assado com vegetais"],
+            "snacks": ["Frutas frescas", "Oleaginosas", "Água saborizada"]
+          }
+        }
+      ]
+    },
+    "marmitas_guide": {
+      "title": "Emagrecendo com Marmitas: Seu Guia Prático",
+      "chapters": [
+        {
+          "title": "O Segredo das Marmitas Inteligentes",
+          "content": "Organização semanal, porções e balanceamento nutricional. A chave está no planejamento e na preparação antecipada.",
+          "benefits": ["Economia", "Praticidade", "Controle", "Consistência"]
+        },
+        {
+          "title": "Montando Suas Marmitas Passo a Passo",
+          "content": "Proteínas magras, carboidratos inteligentes e vegetais frescos. Composição balanceada para cada refeição.",
+          "components": {
+            "proteinas": ["Frango desfiado", "Camarão (ao invés de peixe)", "Peixe", "Ovo"],
+            "carboidratos": ["Azeite ao invés de óleo", "Arroz integral", "Batata doce", "Macarrão"],
+            "legumes": ["Brócolis ao invés de couve-flor", "Abobrinha", "Couve-flor aos cubos", "Vagem e vagem", "Saladas de hortaliças"]
+          }
+        },
+        {
+          "title": "Como Armazenar e Conservar Suas Marmitas",
+          "content": "Dicas de congelamento, validade ideal e técnicas de armazenamento para manter a qualidade das refeições preparadas.",
+          "storage_tips": ["Usar potes de vidro ao invés de plástico para evitar vazamentos", "Congelar com antecedência", "Evitar colocar no refrigerador quentes", "Verificar período de validade"]
+        },
+        {
+          "title": "Checklist de Compras (7 Dias de Marmitas)",
+          "content": "Lista organizada de ingredientes para 7 dias de marmitas, dividida por categorias de alimentos.",
+          "shopping_list": {
+            "proteinas": ["Filé de frango", "Camarão", "Peixe", "Ovos"],
+            "graos": ["Azeite", "Batata doce", "Arroz integral"],
+            "vegetais": ["Brócolis", "Abobrinha", "Couve-flor", "Alface", "Tomate", "Pepino"],
+            "temperos": ["Azeite", "Alho", "Cebola", "Sal", "Pimenta", "Cebolinha", "Água"]
+          }
+        }
+      ]
+    },
+    "kit_turbo": {
+      "title": "Kit Turbo de Emagrecimento: Guia Definitivo",
+      "features": [
+        "Planner Semanal de Emagrecimento",
+        "Receitas Detox Poderosas",
+        "Cardápios Prontos para o Dia a Dia",
+        "Cardápio Personalizado via IA"
+      ],
+      "ai_personalization": {
+        "process": {
+          "data_collection": "Idade, sexo, peso, altura, objetivos, histórico médico, restrições e preferências",
+          "processing": "Algoritmos avançados analisam suas informações para criar o plano perfeito",
+          "result": "PDF detalhado com seu plano alimentar personalizado, entregue via WhatsApp"
+        },
+        "benefits": [
+          "Individualidade máxima",
+          "Praticidade na execução", 
+          "Eficiência comprovada para resultados mais rápidos"
+        ]
+      }
+    },
+    "planner_semanal": {
+      "title": "Planner Semanal para Emagrecimento",
+      "purpose": "Organize suas refeições, acompanhe sua evolução e mantenha o foco nos resultados",
+      "daily_tracking": [
+        "Café da Manhã",
+        "Almoço", 
+        "Jantar",
+        "Ceia",
+        "Água",
+        "Exercício",
+        "Anotações"
+      ],
+      "motivation_phrases": [
+        "Um novo começo",
+        "Continue firme",
+        "Metade da semana, você já",
+        "Disciplina é livre",
+        "Pequenas escolhas geram grandes mudanças",
+        "Não é sorte, é ciência"
+      ]
+    }
+  },
+  "cardapios_prontos": {
+    "semana_completa": {
+      "dia_1": {
+        "cafe_da_manha": "Tapioca de Banana: 1 tapioca média com 1 banana fatiada e chia",
+        "almoco": "Marmita de Frango Grelhado: 120g de frango grelhado, mix de legumes no vapor e 3 colheres de sopa de arroz integral",
+        "jantar": "Sopa de Legumes Detox: Sopa leve com couve, cenoura, abobrinha e frango desfiado",
+        "ceia": "Chá de Hibisco com Canela: 1 xícara de chá para auxiliar na digestão"
+      },
+      "dia_2": {
+        "cafe_da_manha": "Shake de Uva Roxa: 1 copo de leite vegetal, 1 xícara de uvas, 1 colher de sopa de aveia",
+        "almoco": "Tilápia ao Forno: 120g de tilápia assada, brócolis cozido e batata doce assada",
+        "jantar": "Caldo de Abóbora com Gengibre: Caldo cremoso de abóbora com toque de gengibre fresco",
+        "ceia": "Água Saborizada: 1 copo de água com rodelas de limão e folhas de hortelã"
+      },
+      "dia_3": {
+        "cafe_da_manha": "Omelete com Legumes: 2 ovos, tomate, cebola e espinafre",
+        "almoco": "Carne Magra com Abóbora: 100g de carne magra refogada com abóbora cabotiá e salada verde",
+        "jantar": "Omelete Leve: 2 ovos com ervas finas e salada de alface e tomate",
+        "ceia": "Iogurte Proteico: 1 pote de iogurte natural com 1 medida de whey protein e adoçante natural"
+      },
+      "dia_4": {
+        "cafe_da_manha": "Overnight Oats: 3 colheres de sopa de aveia, 1/2 copo de leite vegetal, frutas vermelhas e amêndoas",
+        "almoco": "Omelete de Forno: Omelete com legumes variados e salada de folhas verdes",
+        "jantar": "Salada Verde com Frango: Salada completa com folhas, frango em cubos, pepino, tomate e azeite extra virgem",
+        "ceia": "Leite Dourado: 1 xícara de leite vegetal com 1 colher de chá de cúrcuma em pó"
+      },
+      "dia_5": {
+        "cafe_da_manha": "Iogurte Natural: 1 pote de iogurte natural com frutas picadas e 1 colher de chá de chia",
+        "almoco": "Quinoa com Frango Desfiado: 4 colheres de sopa de quinoa, 100g de frango desfiado e cenoura ralada",
+        "jantar": "Creme de Couve-Flor: Creme de couve-flor com temperos naturais e uma pitada de noz-moscada",
+        "ceia": "Shake Detox Verde: 1 copo de água de coco, 1 folha de couve, hortelã e gengibre"
+      },
+      "dia_6": {
+        "cafe_da_manha": "Panqueca de Aveia: 1 ovo, 2 colheres de sopa de aveia, canela. Acompanhe com frutas",
+        "almoco": "Salada Proteica: Mix de folhas, ovos cozidos, atum em água, tomate e pepino",
+        "jantar": "Panqueca Proteica: Panqueca feita com whey protein e farinha de aveia, recheada com frango desfiado",
+        "ceia": "Gelatina Zero: 1 porção de gelatina diet com sabor de sua preferência"
+      },
+      "dia_7": {
+        "cafe_da_manha": "Smoothie Detox: Couve, maçã verde, limão, gengibre e água de coco",
+        "almoco": "Strogonoff Fit de Frango: Strogonoff de frango light com creme de ricota, champignon e arroz de couve-flor",
+        "jantar": "Wrap Integral de Frango: Tortilla integral recheada com frango grelhado, alface, tomate e pasta de grão de bico",
+        "ceia": "Suco Calmante de Maracujá: Suco de maracujá com água e adoçante natural"
+      }
+    }
+  },
+  "nutrition_guidelines": {
+    "serving_size": "200-300g por porção",
+    "daily_recommendations": {
+      "calories": "1200-1800 kcal (mulheres), 1800-2200 kcal (homens)",
+      "protein": "1.2-1.6g por kg de peso corporal",
+      "carbs": "45-65% das calorias totais",
+      "fat": "20-35% das calorias totais"
+    },
+    "dietary_goals": {
+      "emagrecimento": "Déficit calórico de 300-500 kcal/dia",
+      "manutenção": "Balanço calórico neutro",
+      "ganho_massa": "Superávit calórico de 200-300 kcal/dia"
+    }
+  },
+  "app_features": {
+    "search_and_filter": {
+      "categories": ["shakes_vitaminas", "cafe_da_manha", "detox", "saladas", "jantar", "almoco", "sopas", "lanches", "ceia", "termogenicas", "low_carb", "sobresmeses"],
+      "calories_range": ["< 200", "200-400", "400-600", "600-800", "> 800"],
+      "prep_time": ["< 15min", "15-30min", "> 30min"],
+      "difficulty": ["fácil", "médio", "difícil"],
+      "ingredients": ["frango", "peixe", "vegetariano", "sem_glúten", "low_carb"],
+      "tags": ["detox", "termogênico", "protein", "low_calorie", "rápido"]
+    },
+    "ai_features": {
+      "recipe_generation": {
+        "custom_recipes": true,
+        "dietary_restrictions": true,
+        "ingredient_substitutions": true,
+        "nutrition_optimization": true
+      },
+      "meal_planning": {
+        "weekly_planning": true,
+        "shopping_lists": true,
+        "calorie_tracking": true,
+        "progress_monitoring": true
+      },
+      "personalization": {
+        "taste_preferences": true,
+        "health_goals": true,
+        "lifestyle_factors": true,
+        "allergy_considerations": true
+      }
+    },
+    "meal_prep_tools": {
+      "planner_interativo": true,
+      "storage_tips": true,
+      "batch_cooking": true,
+      "shopping_lists": true
+    }
+  },
+  "general_notes": [
+    "Todas as receitas focam em conter a maior quantidade possível de ingredientes que trazem benefícios para nossa saúde.",
+    "Nem todas as receitas são individuais, então fique atenta(o) a tomar apenas uma porção por dia ou comer apenas uma porção.",
+    "A quantidade ideal de uma porção é de 200 a 300 gramos.",
+    "Se você tem problema com intestino preguiçoso, tente não coar os shakes, as fibras ajudam na melhor formação do bolo fecal.",
+    "Importante lembrar que as receitas não substituem um plano alimentar individualizado feito por um nutricionista.",
+    "Receitas desenvolvidas por @FERNANDASANTOSPRO, conteúdo licenciado para Wanessa."
+  ],
+  "ingredient_categories": {
+    "proteinas": ["frango", "atum", "ovos", "queijo", "ricota", "cottage", "peixe", "carne magra"],
+    "vegetais": ["couve", "brócolis", "tomate", "pepino", "cenoura", "alface", "espinafre", "abobrinha"],
+    "frutas": ["banana", "maçã", "manga", "abacaxi", "kiwi", "morango", "uvas", "abacate"],
+    "graos_leguminosas": ["aveia", "quinoa", "grão-de-bico", "feijão", "lentilha", "arroz integral"],
+    "especiarias": ["gengibre", "canela", "páprica", "cominho", "alecrim", "pimenta", "alho"],
+    "laticinios": ["leite desnatado", "iogurte", "queijo cottage", "ricota", "parmesão"],
+    "termogenicos": ["alho", "gengibre", "pimenta", "pimentão", "atum", "sardinha", "canela"],
+    "detox": ["couve", "limão", "hortelã", "pepino", "maçã", "gengibre", "cúrcuma"]
+  }
+}

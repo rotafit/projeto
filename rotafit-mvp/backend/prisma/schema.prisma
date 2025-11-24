@@ -1,0 +1,167 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./rotafit.db"
+}
+
+model User {
+  id                String    @id @default(cuid())
+  email             String    @unique
+  password          String
+  firstName         String
+  lastName          String
+  phone             String?
+  birthDate         DateTime?
+  gender            String?
+  weight            Float?
+  height            Float?
+  activityLevel     String?
+  isActive          Boolean   @default(true)
+  trialStartDate    DateTime?
+  trialEndDate      DateTime?
+  subscriptionId    String?
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+  
+  // Relations
+  subscription      Subscription? @relation(fields: [subscriptionId], references: [id])
+  quizResponses     QuizResponse[]
+  mealPlans         MealPlan[]
+  progressEntries   ProgressEntry[]
+  shoppingLists     ShoppingList[]
+  
+  @@map("users")
+}
+
+model Subscription {
+  id            String      @id @default(cuid())
+  name          String      @unique
+  price         Float
+  duration      Int         // duration in days
+  features      String      // features available in this plan (comma separated)
+  isActive      Boolean     @default(true)
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+  
+  // Relations
+  users         User[]
+  
+  @@map("subscriptions")
+}
+
+model QuizResponse {
+  id            String    @id @default(cuid())
+  userId        String
+  objectives    String    // emagrecimento, ganho_massa, manutencao
+  dietaryRestrictions String    // vegetariano, vegano, sem_gluten, sem_lactose (comma separated)
+  foodPreferences String   // doces, salgados, picante, etc. (comma separated)
+  allergies     String    // comma separated
+  routineType    String    // ativo, sedentario, muito_ativo
+  cookingTime    String    // <15min, 15-30min, >30min
+  cookingSkill   String    // iniciante, intermedio, avancado
+  favoriteCategories String   // Which recipe categories they prefer (comma separated)
+  responses      String    // All answers in structured format
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+  
+  // Relations
+  user          User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  @@map("quiz_responses")
+}
+
+model MealPlan {
+  id              String        @id @default(cuid())
+  userId          String
+  weekStart       DateTime
+  weekEnd         DateTime
+  isPersonalized  Boolean       @default(false)
+  aiGenerated     Boolean       @default(false)
+  dailyPlans      String        // structured daily meal plans
+  totalCalories   Int
+  macroTargets    String        // protein, carbs, fat targets
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+  
+  // Relations
+  user            User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  @@map("meal_plans")
+}
+
+model Recipe {
+  id              String    @id @default(cuid())
+  externalId      String    @unique // ID from JSON database
+  name            String
+  category        String
+  difficulty      String
+  prepTime        String
+  cookTime        String
+  servings        Int
+  calories        Int
+  ingredients     String    // structured ingredients array
+  instructions    String    // instructions array
+  tags            String    // comma separated
+  nutrition       String    // protein, carbs, fat
+  healthBenefits  String    // comma separated
+  isAvailable     Boolean   @default(true)
+  categoryIndex   Int       // Index in the category
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  
+  @@map("recipes")
+}
+
+model ProgressEntry {
+  id            String    @id @default(cuid())
+  userId        String
+  date          DateTime
+  weight        Float?
+  waterIntake   Int?      // ml
+  stepsCount    Int?
+  caloriesBurned Int?
+  exerciseType  String?
+  exerciseDuration Int?   // minutes
+  notes         String?
+  createdAt     DateTime  @default(now())
+  
+  // Relations
+  user          User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  @@map("progress_entries")
+}
+
+model ShoppingList {
+  id            String        @id @default(cuid())
+  userId        String
+  name          String
+  weekStart     DateTime
+  weekEnd       DateTime
+  items         String        // structured shopping items
+  isCompleted   Boolean       @default(false)
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+  
+  // Relations
+  user          User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  @@map("shopping_lists")
+}
+
+model Notification {
+  id            String    @id @default(cuid())
+  userId        String
+  type          String    // meal_reminder, progress_update, subscription
+  title         String
+  message       String
+  isRead        Boolean   @default(false)
+  createdAt     DateTime  @default(now())
+  
+  @@map("notifications")
+}
